@@ -1,4 +1,8 @@
 function visualise(freq){
+    tokens.forEach((circle) => {
+        Composite.remove(world, circle);
+    });
+
     tokens = Array.from(freq)
         .map(([word, count]) => [word, count])
         .sort((a, b) => b[1] - a[1])
