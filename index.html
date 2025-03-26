@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <form id="fileForm">
+        <input type="file" name="fileInput" id="fileInput" multiple accept=".txt">
+        <button type="submit">Upload</button>
+    </form>
+    
+    <div id="render"></div>
+
+    <script src="node_modules/matter-js/build/matter.min.js"></script>
+    <script src="src/scripts/utils.js"></script>
+    <script src="src/scripts/physics.js"></script>
+    <script src="src/scripts/fileProcessing.js"></script>
+    <script src="src/scripts/visualization.js"></script>
+</body>
+</html>
