@@ -52,7 +52,7 @@ Events.on(render, "afterRender", function () {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
 
-    tokens.forEach((circle)=>{
-        ctx.fillText(circle.customLabel, circle.position.x, circle.position.y);
+    tokens.forEach((token)=>{
+        ctx.fillText(token.customLabel, token.position.x, token.position.y);
     });
 });
